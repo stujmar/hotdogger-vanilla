@@ -1,0 +1,555 @@
+/* GENERAL USER AGENT RESETS */
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka One';
+  }
+  
+  .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; /*for android*/
+  }
+  
+  a,
+  a label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* A link that has not been visited */
+  a:link {
+    color: inherit;
+  }
+  /* A link that has been visited */
+  a:visited {
+    color: inherit;
+  }
+  
+  body {
+      margin: 0;
+      background: rgb(228, 138, 220);
+      font-size: 16px;
+  }
+  
+  /* TOP BANNER */
+  .banner {
+    background: tomato;
+    height:75px;
+    padding-top: 10px;
+    width:100%;
+  }
+  
+  h1 { 
+    color: rgb(251, 255, 0);
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(116, 0, 0);
+    font-family: 'Fredoka One';
+    font-size: 3rem;
+    margin: 0;
+    
+  }
+  
+  .yellow-text {
+    color: rgb(251, 255, 0);
+  }
+  
+  .login {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+  }
+  
+  .login a {
+    color: rgb(116, 0, 0);
+  }
+  
+  .login a:hover {
+    text-shadow: 0px 0px 15px rgb(255, 255, 0),
+      0px 0px 5px rgb(255, 239, 11);
+  }
+  
+  
+  /* --SCORE SHEET-- */
+  
+  .score-sheet {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(255, 220, 21);
+    box-shadow: inset 0px 0px 5px rgba(112, 0, 0, 0.25);
+    height: 100px; 
+    border: 6px solid transparent;
+  }
+  
+  .score-grid {
+    color:rgb(172, 26, 0);
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: .75rem;
+  }
+  
+  .scores-four {
+    font-size: 1.25rem;
+  }
+  
+  /* BODY STYLES  */
+  
+  .wrapper{
+    background: rgb(228, 138, 220);
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 15px;
+    width: 95%;
+  }
+  
+  .grid {
+    display:grid;
+    grid-template-columns: 125px 1fr 125px;
+  }
+  
+  .hotdog{
+      padding: 10px;
+      width: 100%;
+      transition: all 0.5s ease;
+  }
+  
+  .center-col {
+    text-align: center;
+  }
+  .hotdog:hover {
+      transform: scale(1.03);
+  }
+  
+  .bottle-parent {
+      display: none;
+      height: 62.5px;
+      width: 125px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 10px;
+      position: relative;
+      transition: all 0.5s ease;
+  }
+  .bottle-parent:hover {
+      transform: scale(1.03);
+  }
+  
+  .bot-text {
+      padding: 25px 12.5px;
+      font-size: 1rem;
+      color: rgb(31, 1, 41);
+      margin: auto;
+      text-align: center;
+      position: absolute;
+      z-index: 4;
+      display: block;
+      font-family: 'Fredoka One';
+  }
+  
+  .score {
+      margin-left: 60px;
+      margin-top: 35px;
+      display: block;
+      width: 62.5px;
+      height: 32.5px;
+      text-align: right;
+      position: absolute;
+      font-family: 'Fredoka One';
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.33);
+      z-index: 4;
+  }
+  
+  .cost {
+      display: block;
+      top: 0;
+      padding-left: 5px;
+      width: 125px;
+      height: 60px;
+      text-align: left;
+      position: absolute;
+      z-index: 3;
+      font-family: 'Fredoka One';
+      font-size: .75rem;
+      color: rgba(0, 0, 0, 0.33);
+  }
+
+  .bot-image {
+      background-image: url('../img/bottle_01.png');
+      background-size: cover;
+      display: inline-block;
+      z-index: 2;
+      position: absolute;
+      width: 125px;
+      height: 60px; 
+      bottom: 1px;
+  }
+  
+  .bot-waves {
+      position: absolute;
+      z-index: 1;
+      width:124px;
+      margin: 1px;
+      padding-top: 27px;
+      bottom: 0;
+  }
+  
+  .bbq-height {
+    border-bottom:1px solid orange;
+  }
+  
+  /* RIGHT SECTION */
+  
+  .right {
+    float:right;
+  }
+  
+  .passive-text {
+    position: relative;
+    z-index: 5;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 1rem; /*watch out for this */ 
+    line-height: .75rem;
+  }
+  
+  .passive-upgrade {
+    position: relative;
+    /* display: block; */
+    z-index: 2;
+    padding: 1px;
+    font-size: 2rem;
+    color: rgb(31, 1, 41);
+  }
+  
+  .cond { 
+    background: rgb(228, 138, 220);
+    position: relative;
+    display: block; 
+    margin-top: -65px;
+    width: 125px;
+    z-index: 1;
+  }
+  
+  .click {
+    /* display: block; */
+    height: 62.5px;
+  }
+  
+  .passive-score {
+    margin-left: 5px;
+    margin-top: -5px;
+    display: block;
+    width:100px;
+    /* height: 60px; */
+    text-align: left;
+    position: relative;
+    z-index: 4;
+    font-family: 'Fredoka One';
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 0 0 10px rgb(228, 138, 220), 0 0 5px rgb(228, 138, 220), 0 0 10px rgb(228, 138, 220), 0 0 15px rgb(228, 138, 220),
+    0 0 20px rgb(228, 138, 220), 0 0 25px rgb(228, 138, 220); */
+  }
+  
+  #onions-click:hover > .onions-passive, #pickles-click:hover > .pickles-passive, #tomatoes-click:hover > .tomatoes-passive, #peppers-click:hover > .peppers-passive,
+  .ketchup:hover > .bot-text, .cheese:hover > .bot-text, .mustard:hover > .bot-text, .relish:hover > .bot-text, .bbq:hover > .bot-text {
+    text-shadow: 0px 0px 15px white,
+    0px 0px 5px white;
+  }
+
+  .little-text {
+    margin-left: 5px;
+    font-size: .75rem;
+  }
+  * WAVES TEST */
+  
+        /* .flex { 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        } */
+        
+        .waves {
+          position:relative;
+          width: 100%;
+          height: 125px;
+          margin-bottom:-7px; /*Fix for safari gap*/
+          min-height:100px;
+          max-height:150px;
+        }
+        
+        /* Animation */
+        
+        .parallax > use {
+          animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+        }
+        .parallax > use:nth-child(1) {
+          animation-delay: -2s;
+          animation-duration: 7s;
+        }
+        .parallax > use:nth-child(2) {
+          animation-delay: -3s;
+          animation-duration: 10s;
+        }
+        .parallax > use:nth-child(3) {
+          animation-delay: -4s;
+          animation-duration: 13s;
+        }
+        .parallax > use:nth-child(4) {
+          animation-delay: -5s;
+          animation-duration: 20s;
+        }
+        @keyframes move-forever {
+          0% {
+           transform: translate3d(-90px,0,0);
+          }
+          100% { 
+            transform: translate3d(85px,0,0);
+          }
+        }
+        
+        .parallax {
+            border: 1px black solid;
+        }
+  
+  /* FOOTER STYLING */
+  
+  .footer {
+    color: rgb(116, 0, 0);
+    padding: 10px;
+    background: rgb(255, 220, 21);
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    z-index: 52;
+  }
+  
+  .save-menu, .save-menu li {
+  display: inline;
+  float: right;
+  margin-top: 0;
+  padding-right: 10px;
+  }
+  
+  .mmlink {
+    margin-left: 10px;
+  }
+  
+  .reset {
+    float: right;
+    color:rgb(116, 0, 0);
+  }
+  
+  /* LEVEL UNLOCK STYLES */
+  
+   .passive-upgrade{
+    display:none;
+  }
+  
+  /* LIGHTBOX GUIDES (STORY POP-UPS) */
+  .stories-grey {
+    display: block;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 52;
+  }
+  
+  .stories-yellow {
+    display: block;
+    background: rgb(255, 220, 21);
+    padding: 15px 20px 35px;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    max-width: 700px;
+  }
+  
+  .story-relative {
+    margin: 275px auto;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+  }
+  
+  #exit {
+    background: tomato;
+    border-radius: 5px;
+    bottom: -15px;
+    color: white;
+    display: block;
+    font-size: 1.25rem;
+    height: 35px;
+    margin-right: -50px;
+    padding-top: 5px;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(83, 16, 4);
+    width: 100px;
+  }
+  
+  .story-box {
+      display: inline;
+      line-height: 1.5rem;
+    }
+  
+  .pig {
+      top:-180px;
+      position: absolute;
+      right: 5%; 
+      width: 300px;
+      max-width: 500px;
+      z-index: 4;
+  }
+  
+  
+        @media screen and (min-width: 769px) {
+          /* HEADER */
+          .banner {
+            height:100px;
+            padding-top: 0px; 
+          }
+          
+          /* SCORE SHEET */
+          .score-grid {
+            font-size: 1rem;
+          }
+          
+          .scores-four {
+            font-size: 1.5rem;
+          }
+  
+          /* BODY  */
+          body {
+            background: url('../img/bg.png');
+            background-repeat: repeat;
+            background-size: 75px;
+          }
+          /* RIGHT SECTION */
+          .passive-score {
+            font-size: 3rem;
+            width: 200px;
+            height: 60px;
+          }
+  
+          .passive-text {
+            margin-top: 30px;
+            font-size: 2rem;
+            line-height: 1rem;
+          }
+  
+          .little-text {
+            margin-left: 70px;
+            font-size: 1rem;
+          }
+  
+          .click {
+            height:125px;
+          }
+  
+          .cond {
+            margin-top: -123px;
+            width: 250px;
+          }
+  
+          /* GENERAL STUFF */
+          .wrapper {
+            width: 85%;
+            max-width: 850px; 
+          }
+          .score-sheet {
+            width: 85%;
+            max-width: 850px;
+          }
+  
+          .grid {
+            display:grid;
+            grid-template-columns: 250px 1fr 250px;
+          }
+  
+          .hotdog{
+            width: 250px;
+        }
+  
+        .bottle-parent, .bot-image {
+          height: 125px;
+          width: 250px;
+        }
+  
+        h1{
+        font-size: 5rem;
+        }
+  
+        .grid {
+          grid-template-columns: 250px 1fr 250px;
+        }
+  
+        .cost {
+          width: 250px;
+        }
+      
+        .bot-waves {
+          width:248px;
+          padding-top: 55px;
+      }
+      
+        .cost {
+          font-size: 1rem;
+        }
+      .bot-text {
+        padding: 45px 25px;
+        font-size: 2rem;   
+      }
+  
+      .score {
+        margin-left: 120px;
+        margin-top: 75px;
+        width:125px;
+        height: 65px;
+        font-size: 3rem;
+      }
+        /*STORY POP UP TABLET*/
+        .story-relative {
+            margin: 475px auto;
+        }
+        .pig {
+        top:-300px;
+        width: 500px;
+        margin-right:-250px;
+        right: 45%;
+        }
+        .stories-yellow {
+        width: 700px;
+        right: 50%;
+        margin-right: -350px;
+        }
+    }
+  
+    @media screen and (min-width: 1000px) {
+        .stories-grey {
+            background: rgba(0, 0, 0, 0.5);
+          }
+        
+    }

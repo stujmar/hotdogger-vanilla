@@ -1,0 +1,144 @@
+/* --- GENERAL STYLE RESETS --- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* --- HEADER STYLES --- */
+header {
+    background: #999;
+    border-bottom: 5px solid gray;
+    color: #fff;
+    height: 100px;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 0px #777;
+    font-weight: lighter;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    margin-left: 20px; 
+}
+
+
+/* --- BODY STYLES --- */
+
+.wrap {
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 100%;
+}
+
+ul{
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    
+}
+
+.menu li {
+    background: #999;
+    border-bottom: 4px solid rgb(71, 71, 71);
+    /* margin-bottom: 5px; */
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+
+   
+}
+
+
+.menu-item {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0px 2px 0px #777;
+}
+
+/* GRID CONTENT */
+
+.container {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-areas: 
+    'grid1' 'grid2'
+    'grid3' 'grid4'; */
+}
+
+.grid1 {
+    background: #5fa1e4;
+}
+
+.grid2 {
+    background: #2ccc41;
+}
+
+.grid3 {
+    background: #ce1891;
+}
+
+.grid4 {
+    background: #cfd148;
+}
+
+@media screen and (min-width: 769px) { /*RULES FOR TABLETS*/
+    body {
+      background-color: rgb(190, 190, 255);
+    }
+
+    .wrap {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .menu ul {
+        text-align: center;
+    }
+
+    .menu li {
+    display: inline-block;
+    width: 24%;
+    
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
+  
+  @media screen and (min-width: 1000px) { /*RULES FOR DESKTOPS*/
+    body {
+      background-color: rgb(102, 102, 102);
+    }
+    .wrap {
+        width: 75%;
+    }
+    .menu li {
+        display: inline-block;
+        }
+  }

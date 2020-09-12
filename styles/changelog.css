@@ -1,0 +1,127 @@
+/* USER AGENT SYTLE RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Fredoka One';
+}
+
+body {
+    background: url('../img/bg.png'), rgb(153, 223, 255);
+    background-size: 50px 50px;
+    font-family: 'Squada One', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(243, 219, 0);
+    text-shadow: 0 0 15px rgba(78, 1, 1, 0.473);
+    margin-bottom: 10px;
+}
+
+.sub-header {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+a { 
+    margin-top: 10px;
+    padding: 5px;
+    background: rgb(243, 219, 0);
+    text-decoration: none; 
+    
+}
+a:visited { 
+    text-decoration: none;
+    color: black; 
+}
+a:hover { 
+    text-decoration: none; 
+    color: black;
+    text-shadow: 0px 0px 10px rgb(245, 0, 0),
+    0px 0px 5px rgb(197, 0, 0);
+}
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; 
+}
+
+.wrapper {
+    background: rgb(76, 211, 245);
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    min-height: -webkit-fill-available;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+    text-align: center;
+    padding-top:10px;
+}
+
+
+.centered {
+    display: block;
+}
+
+.image {
+    width: 300px;
+    /* margin-bottom: 15px; */
+    margin: 0 auto 10px;
+}
+
+.link-text {
+    color:black;
+    font-size: 1.25rem;
+}
+
+/* SIGNUP FORM STYLES */
+
+.signup {
+    padding: 30px 60px;
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    background: #5fe2ff;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.center-form {
+    text-align: right;
+}
+
+.errors {
+    padding-top: 10px;
+    color:red;
+}
+
+ul {
+    margin: 15px 15px 0px 30px;
+    /* margin-top: 15px;
+    margin-left: 15px; */
+    text-align: left;
+    list-style-position: outside;
+}
+
+@media screen and (min-width: 769px) { 
+    .wrapper {
+        width: 60%;
+        height: 100%;
+        padding: 75px;
+    }
+
+    ul {
+        /* margin-left: 10%; */
+    }
+
+    .update {
+        padding-bottom: 7px;
+        line-height: 1.33rem;
+    }
+
+}

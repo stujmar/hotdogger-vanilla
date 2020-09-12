@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/hotdogger.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Hot Dogger</title>
+</head>
+<body>
+    <header class="banner">
+        <h1>HOT D<a href="#!" id="eat" class="no-select">O</a>GGER</h1>
+        <!-- <div class="login"><a href="construction.html">Sign In</a><span class="yellow-text"> | </span><a href="construction.html">Sign Up</a></div> -->
+    </header>
+    <div class="score-sheet">
+        <div class="score-grid scores-one">Condiment Multipler: <span id="condiment-multi">1</span></div>
+        <div class="score-grid scores-two">Dogs eaten: <span id="eaten">0</span></div>
+        <div class="score-grid scores-three">Total Clicks: <span id="total-clicks">0</span></div>
+        <div class="score-grid scores-four">Total Hot Dogs: <span id="total">0.00</span></div>
+    </div>
+    <div class="wrapper">
+        <div class="grid">
+            <div class="left-col">    
+                <a href="#" class="bottle-parent ketchup no-select" id="ketchup-click">
+                    <div class="cost">cost: <span id="ketchup-cost">1</span></div>
+                    <div class="bot-text">Ketchup</div>
+                    <div id="ketchup-score" class="score">0</div>
+                    <div class="bot-image" ></div>
+                    <div class="bot-waves" id="ketchup-background">
+                        <div class="wave-header">
+                                    <div class="inner-header flex"></div>
+                                        <div>
+                                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                            <defs>
+                                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,0,0,0.7" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,0,0,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,0,0,0.3)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7" fill="red" />
+                                            </g>
+                                            </svg>
+                                        </div>
+
+                    </div>
+                    </div>
+                </a> <!-- ketchup close -->
+                <a href="#" class="bottle-parent mustard no-select" id="mustard-click">
+                    <div class="cost">cost: <span id="mustard-cost">2</span></div>
+                    <div class="bot-text">Mustard</div>
+                    <div id="mustard-score" class="score">0</div>
+                    <div class="bot-image"></div>
+                    <div class="bot-waves" id="mustard-background">
+                        <div class="wave-header">
+                                    <div class="inner-header flex"></div>
+                                        <div>
+                                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                            <defs>
+                                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(249,231,33,0.7)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(249,231,33,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(249,231,33,0.3)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(249,231,33,1.0)" />
+                                            </g>
+                                            </svg>
+                                        </div>
+
+                        </div>
+                    </div>
+                </a> <!-- mustard-col close -->
+                <a href="#" class="bottle-parent relish no-select" id="relish-click">
+                    <div class="cost">cost: <span id="relish-cost">3</span></div>
+                    <div class="bot-text">Relish</div>
+                    <div id="relish-score" class="score">0</div>
+                    <div class="bot-image"></div>
+                    <div class="bot-waves" id="relish-background">
+                        <div class="wave-header">
+                                    <div class="inner-header flex"></div>
+                                        <div>
+                                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                            <defs>
+                                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,231,33,0.7)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,231,33,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,231,33,0.3)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,231,33,1.0)" />
+                                            </g>
+                                            </svg>
+                                        </div>
+                        </div>
+                    </div>
+                </a> <!-- relish-col close -->
+                <a href="#" class="bottle-parent bbq no-select" id="bbq-click">
+                    <div class="cost">cost: <span id="bbq-cost">4</span></div>
+                    <div class="bot-text">BBQ</div>
+                    <div id="bbq-score" class="score">0</div>
+                    <div class="bot-image"></div>
+                    <div class="bot-waves" id="bbq-background">
+                        <div class="wave-header">
+                                    <div class="inner-header flex"></div>
+                                        <div class="bbq-height">
+                                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                            <defs>
+                                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(180,45,0,0.7)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(180,45,0,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(180,45,0,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(180,45,0,1.0)" />
+                                            </g>
+                                            </svg>
+                                        </div>
+
+                        </div>
+                    </div>
+                </a> <!-- bbq-col close -->
+                <a href="#!" class="bottle-parent cheese no-select" id="cheese-click">
+                    <div class="cost">cost: <span id="cheese-cost">10000</span></div>
+                    <div class="bot-text">Cheese</div>
+                    <div id="cheese-score" class="score">0</div>
+                    <div class="bot-image"></div>
+                    <div class="bot-waves" id="cheese-background">
+                        <div class="wave-header">
+                                    <div class="inner-header flex"></div>
+                                        <div>
+                                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                            <defs>
+                                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,187,0,0.7)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,187,0,0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,187,0,0.3)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,187,0,1.0)" />
+                                            </g>
+                                            </svg>
+                                        </div>
+
+                        </div>
+                    </div>
+                </a> <!-- cheese-col close -->
+            </div> <!-- left-col close -->
+            <div class="center-col">
+                <a href="#intro-box" class="no-select" id="the-hotdog" >
+                    <img class="hotdog no-select" src="img/hotdog.png" alt="hotdog">
+                </a> 
+            </div> <!-- center-col close -->
+            <div class="right-col"> 
+                <a href="#" id="onions-click" class="click bottle-parent passive-upgrade no-select">
+                    <div class="cost">cost: <span id="onions-cost">10</span></div>
+                    <div class="passive-text onions-passive">Onions </br><span class="little-text">+one per second</span></div>
+                    <div class="passive-score"><span id="onions-score">0</span></div>
+                    <img class="cond" id="onions-background" src="img/onions.png" alt="onions">
+                </a>
+                <a href="#" id="pickles-click" class="click bottle-parent passive-upgrade no-select">
+                        <div class="cost">cost: <span id="pickles-cost">20</span></div>
+                        <div class="passive-text pickles-passive">Pickles</br><span class="little-text">+two per second</span></div>
+                        <div class="passive-score"><span id="pickles-score">0</span></div>
+                        <img class="cond" id="pickles-background" src="img/pickles.png" alt="pickles">
+                </a>
+                <a href="#" id="tomatoes-click" class="bottle-parent passive-upgrade no-select">
+                    <div class="cost">cost: <span id="tomatoes-cost">50</span></div>
+                    <div class="passive-text tomatoes-passive">Tomatoes</br><span class="little-text">+three per second</span></div>
+                    <div class="passive-score"><span id="tomatoes-score">0</span></div>
+                    <img class="cond" id="tomatoes-background" src="img/tomatoes.png" alt="tomatoes">
+                </a>
+                <a href="#" id="peppers-click" class="bottle-parent passive-upgrade no-select">
+                    <div class="cost">cost: <span id="peppers-cost">100</span></div>
+                    <div class="passive-text peppers-passive">Peppers</br><span class="little-text">+four per second</span></div>
+                    <div class="passive-score"><span id="peppers-score">0</span></div>
+                    <img class="cond" id="peppers-background" src="img/peppers.png" alt="peppers">
+                </a>
+            </div> <!-- right-col close -->
+        </div> <!--grid close-->
+    </div> <!--wrapper close-->
+    <footer class="footer">version .031 
+        <a href="changelog.html">(Changelog)</a>
+        <a class="mmlink" href="mistermustard.html">mister mustard test</a>
+        <ul class="save-menu">
+            <li><a href="#!" class="reset" id="reset">reset</a></li>
+            <li><a href="#!" class="load" id="load">load</a></li>
+            <li><a href="#!" class="save" id="save">save</a></li>
+            
+        </ul>
+     
+    </footer>
+    <!-- Story Pop-ups -->
+    <div class="stories-grey" id="story-container">
+        <div class="story-relative">
+            <img class="pig" src="img/pig_02.png" alt="pig guide">
+            <div class="stories-yellow">
+            <div id="story-box" class="story-box">                 
+            </div>
+                <a href="#!" id="exit">Let's Go!</a>
+            </div>
+        </div>
+    </div> <!-- Story close-->
+
+    <script src="js/hotdogger.js"></script>
+</body>
+</html>
