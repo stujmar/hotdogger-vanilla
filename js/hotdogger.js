@@ -53,15 +53,15 @@ const addCondiScore = (arrayObject, displayScores) => {
     displayScores.clickMultiplier += arrayObject.multiplier;
     }
 
-/**
- * This updates the hotdogs per hotdog click, first multiplying the condiment multiplier
- * @param {number} singleClick independently scale the value of a click by increasing this. 1 = 100% clickpower
- */
-const addDogScoreOld = (singleClick) => { //I want to make this an object in a main function that holds all the scores instead of storing them in html
-    let addScore = parseFloat(document.getElementById('total').innerHTML);
-    addScore += singleClick * document.getElementById('condiment-multi').innerHTML;
-    document.getElementById('total').innerHTML = addScore.toFixed(2);
-}
+// /**
+//  * This updates the hotdogs per hotdog click, first multiplying the condiment multiplier
+//  * @param {number} singleClick independently scale the value of a click by increasing this. 1 = 100% clickpower
+//  */
+// const addDogScoreOld = (singleClick) => { //I want to make this an object in a main function that holds all the scores instead of storing them in html
+//     let addScore = parseFloat(document.getElementById('total').innerHTML);
+//     addScore += singleClick * document.getElementById('condiment-multi').innerHTML;
+//     document.getElementById('total').innerHTML = addScore.toFixed(2);
+// }
 
 const addToppingDPS = (arrayObject, displayScores) => {
     arrayObject.forEach((element) => {
@@ -218,7 +218,7 @@ const main = () => {
         let addScore = parseInt(document.getElementById('eaten').innerHTML);
         addScore += 1;
         document.getElementById('eaten').innerHTML = addScore;
-        addDogScore(-1);
+        displayScores.total -= 1; //Is this ok?
         addClicksScore(displayScores); 
     });
     
