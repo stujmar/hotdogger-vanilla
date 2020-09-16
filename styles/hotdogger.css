@@ -532,7 +532,7 @@
       }
         /*STORY POP UP TABLET*/
         .story-relative {
-            margin: 475px auto;
+            margin: 35% auto;
         }
         .pig {
         top:-300px;
@@ -548,6 +548,11 @@
     }
   
     @media screen and (min-width: 1000px) {
+      .story-relative {
+        margin: 350px auto;
+    }
+
+
         .stories-grey {
             background: rgba(0, 0, 0, 0.5);
           }
