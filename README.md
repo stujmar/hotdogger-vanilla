@@ -18,11 +18,10 @@ Just getting started
 **Stu** (_Stuart John Marsh_)
 > https://gostugo.com/
 
-### Easter Eggs
+#### Do List and Change Log
 ---
-nah
 
-#### My To Do List
----
+> https://hotdogger.io/changelog.html
+
 * [x] Live at hotdogger.io
 * [ ] Figure out safari click issues

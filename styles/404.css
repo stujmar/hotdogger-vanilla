@@ -1,0 +1,118 @@
+/* USER AGENT SYTLE RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Fredoka One';
+}
+
+body {
+  background: url('../img/bg.png'), rgb(153, 223, 255);
+  background-size: 50px 50px;
+  font-family: 'Squada One', cursive;
+}
+
+.image {
+  width: 250px;
+  margin: 10px auto;
+}
+
+.sub-header {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.wrapper {
+  background: rgb(76, 211, 245);
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  min-height: -webkit-fill-available;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+  text-align: center;
+  padding-top:10px;
+}
+
+.yellow-field {
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 25px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 0px;
+  background: rgb(243, 219, 0);
+  text-decoration: none; 
+}
+
+.yellow-field:hover {
+  background: rgb(228, 205, 5);
+}
+
+a { 
+  color:rgb(55, 0, 0);
+  margin-top: 10px;
+  
+}
+a:visited { 
+  text-decoration: none;
+  color:rgb(55, 0, 0);
+}
+a:hover { 
+  text-decoration: none; 
+  color:rgb(55, 0, 0);
+}
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; 
+}
+
+/*---Tailwind Media Queries --*/
+
+/* 'xs': '375px' */
+@media (min-width: 375px) {
+}
+
+/* 'sm': '640px' */
+@media (min-width: 640px) {
+  .image {
+    width: 250px;
+    margin: 15px auto 10px;
+  }
+  .wrapper {
+    padding-bottom: 50px;
+  }
+  .yellow-field {
+    width: max-content;
+    border-radius: 10px;
+  }
+}
+
+/* 'md': '768px' */
+@media (min-width: 768px) {
+}
+
+/* 'lg': '1024px' */
+@media (min-width: 1024px) {
+}
+
+/* 'xl': '1280px' */
+@media (min-width: 1280px) {
+}
+
+/* '2xl': '1536px' */
+@media (min-width: 1536px) {
+}
+
+.centered {
+  display: block;
+}
+
+.link-text {
+  color:black;
+  font-size: 1.25rem;
+}
+
+
+
+
