@@ -96,23 +96,32 @@
   }
   
   .grid {
-    display:grid;
+    display: flex;
     grid-template-columns: 125px 1fr 125px;
   }
   
-  .hotdog{
+  .hotdog {
       padding: 10px;
-      width: 100%;
-      transition: all 0.5s ease;
-  }
-  
+      width: 250px;
+      /* transform: rotate(90deg); */
+    }
+    
   .center-col {
+    /* flex-grow: 1; */
     text-align: center;
   }
-  .hotdog:hover {
-      transform: scale(1.03);
+
+  .left-col, .right-col {
+    /* display: none; */
   }
-  
+
+  .left-col {
+    margin-right: -75px;
+  }
+  .right-col {
+    margin-left: -75px;
+  }
+
   .bottle-parent {
       display: none;
       height: 62.5px;
@@ -122,6 +131,7 @@
       position: relative;
       transition: all 0.5s ease;
   }
+
   .bottle-parent:hover {
       transform: scale(1.03);
   }
@@ -254,15 +264,7 @@
     margin-left: 5px;
     font-size: .75rem;
   }
-  * WAVES TEST */
-  
-        /* .flex { 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        } */
-        
+  /* WAVES TEST */     
         .waves {
           position:relative;
           width: 100%;
@@ -307,7 +309,6 @@
         }
   
   /* FOOTER STYLING */
-  
   .footer {
     color: rgb(116, 0, 0);
     padding: 10px;
@@ -344,8 +345,19 @@
    .passive-upgrade{
     display:none;
   }
-   
-        @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 425px) {
+    .hotdog {
+      /* transform: rotate(0deg); */
+      width: 250px;
+    }
+
+    .grid {
+      display:flex;
+      grid-template-columns: 125px 1fr 125px;
+    }
+  }
+  @media screen and (min-width: 768px) {
           /* HEADER */
           .banner {
             height:100px;
@@ -388,7 +400,7 @@
           .click {
             height:125px;
           }
-  
+
           .cond {
             margin-top: -123px;
             width: 250px;
@@ -409,10 +421,6 @@
             grid-template-columns: 250px 1fr 250px;
           }
   
-          .hotdog{
-            width: 250px;
-        }
-  
         .bottle-parent, .bot-image {
           height: 125px;
           width: 250px;
@@ -426,6 +434,7 @@
           grid-template-columns: 250px 1fr 250px;
         }
   
+        /* Left Section */
         .cost {
           width: 250px;
         }

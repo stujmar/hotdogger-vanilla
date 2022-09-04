@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/hotdogger.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/stories.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,14 @@
         <h1>HOT D<a href="#!" id="eat" class="no-select">O</a>GGER</h1>
         <!-- <div class="login"><a href="construction.html">Sign In</a><span class="yellow-text"> | </span><a href="construction.html">Sign Up</a></div> -->
     </header>
+    <div class="wrapper">
     <div class="score-sheet">
-        <div class="score-grid scores-one">Condiment Multipler: <span id="condiment-multi">1</span></div>
+        <div class="score-grid scores-one">Multipler: <span id="condiment-multi">1</span></div>
         <div class="score-grid scores-two">Dogs eaten: <span id="eaten">0</span></div>
         <div class="score-grid scores-three">Total Clicks: <span id="total-clicks">0</span></div>
-        <div class="score-grid scores-four">Total Hot Dogs: <span id="total">0.00</span></div>
+        <div class="score-grid scores-four">Total Dogs: <span id="total">0.00</span></div>
     </div>
-    <div class="wrapper">
-        <div class="grid">
+        <div class="flex-wrapper">
             <div class="left-col">    
                 <a href="#" class="bottle-parent ketchup no-select" id="ketchup-click">
                     <div class="cost">cost: <span id="ketchup-cost">1</span></div>
@@ -155,6 +155,7 @@
                     </div>
                 </a> <!-- cheese-col close -->
             </div> <!-- left-col close -->
+            
             <div class="center-col">
                 <a href="#intro-box" class="no-select" id="the-hotdog" >
                     <img class="hotdog no-select" src="img/hotdog.png" alt="hotdog">
@@ -190,7 +191,7 @@
     </div> <!--wrapper close-->
     <footer class="footer">version .031 
         <a href="changelog.html">(Changelog)</a>
-        <a class="mmlink" href="mistermustard.html">mister mustard test</a>
+        <a class="mmlink" href="mistermustard.html">mister mustard</a>
         <ul class="save-menu">
             <li><a href="#!" class="reset" id="reset">reset</a></li>
             <li><a href="#!" class="load" id="load">load</a></li>

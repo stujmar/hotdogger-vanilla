@@ -10,7 +10,7 @@
 } */
 
 .stories-grey {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   position:fixed;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@
 #exit {
   background: tomato;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 15px auto 0;
   color: white;
   display: block;
   font-size: 1.25rem;
@@ -79,7 +79,7 @@
 /* 'sm': '640px', */
 @media (min-width: 640px) {
   .stories-yellow {
-    width: 700px;
+    width: 635px;
     margin: 0 auto 0;
     border-radius: 10px;
   }
@@ -92,7 +92,7 @@
   .pig {
     top: -200px;
     width: 400px;
-    margin-right:-250px;
+    margin-right:-150px;
     right: 45%;
   }
 }

@@ -4,6 +4,14 @@
   font-family: 'Fredoka One';
 }
 
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
