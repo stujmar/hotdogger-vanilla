@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Hotdogger.io">
+    <meta name="description" content="A idle clicker game modeled after the wildly popular cookie clicker.">
+    <meta name="keywords" content="idle game, clicker game, hot dogs, browser game">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/stories.css">
@@ -10,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Hot Dogger</title>
+    <script src="js/hotdogger.js" defer></script>
+    <script src="js/hotdogCanvas.js" defer></script>
 </head>
 <body>
     <header class="banner">
@@ -19,8 +27,8 @@
     <div class="wrapper">
     <div class="score-sheet">
         <div class="score-grid scores-one">Multipler: <span id="condiment-multi">1</span></div>
-        <div class="score-grid scores-two">Dogs eaten: <span id="eaten">0</span></div>
-        <div class="score-grid scores-three">Total Clicks: <span id="total-clicks">0</span></div>
+        <!-- <div class="score-grid scores-two">Dogs eaten: <span id="eaten">0</span></div> -->
+        <div class="score-grid scores-three">Clicks: <span id="total-clicks">0</span></div>
         <div class="score-grid scores-four">Total Dogs: <span id="total">0.00</span></div>
     </div>
         <div class="flex-wrapper">
@@ -156,42 +164,44 @@
                 </a> <!-- cheese-col close -->
             </div> <!-- left-col close -->
             
-            <div class="center-col">
-                <a href="#intro-box" class="no-select" id="the-hotdog" >
-                    <img class="hotdog no-select" src="img/hotdog.png" alt="hotdog">
-                </a> 
+            <div class="center-col" style="width: 200px; height:400px; position:relative">
+                    <a href="#" id="dog-button" style="position:absolute;">
+
+                        <canvas class="hotdog no-select" width="200" height="400" id="hotdog" alt="hotdog">
+                    </a>
+                    <!-- <img class="hotdog no-select" src="img/hotdog.png" alt="hotdog"> -->
             </div> <!-- center-col close -->
             <div class="right-col"> 
                 <a href="#" id="onions-click" class="click bottle-parent passive-upgrade no-select">
                     <div class="cost">cost: <span id="onions-cost">10</span></div>
                     <div class="passive-text onions-passive">Onions </br><span class="little-text">+one per second</span></div>
                     <div class="passive-score"><span id="onions-score">0</span></div>
-                    <img class="cond" id="onions-background" src="img/onions.png" alt="onions">
+                    <img class="cond" id="onions-background" src="img/onions.webp" alt="onions">
                 </a>
                 <a href="#" id="pickles-click" class="click bottle-parent passive-upgrade no-select">
                         <div class="cost">cost: <span id="pickles-cost">20</span></div>
                         <div class="passive-text pickles-passive">Pickles</br><span class="little-text">+two per second</span></div>
                         <div class="passive-score"><span id="pickles-score">0</span></div>
-                        <img class="cond" id="pickles-background" src="img/pickles.png" alt="pickles">
+                        <img class="cond" id="pickles-background" src="img/pickles.webp" alt="pickles">
                 </a>
                 <a href="#" id="tomatoes-click" class="bottle-parent passive-upgrade no-select">
                     <div class="cost">cost: <span id="tomatoes-cost">50</span></div>
                     <div class="passive-text tomatoes-passive">Tomatoes</br><span class="little-text">+three per second</span></div>
                     <div class="passive-score"><span id="tomatoes-score">0</span></div>
-                    <img class="cond" id="tomatoes-background" src="img/tomatoes.png" alt="tomatoes">
+                    <img class="cond" id="tomatoes-background" src="img/tomatoes.webp" alt="tomatoes">
                 </a>
                 <a href="#" id="peppers-click" class="bottle-parent passive-upgrade no-select">
                     <div class="cost">cost: <span id="peppers-cost">100</span></div>
                     <div class="passive-text peppers-passive">Peppers</br><span class="little-text">+four per second</span></div>
                     <div class="passive-score"><span id="peppers-score">0</span></div>
-                    <img class="cond" id="peppers-background" src="img/peppers.png" alt="peppers">
+                    <img class="cond" id="peppers-background" src="img/peppers.webp" alt="peppers">
                 </a>
             </div> <!-- right-col close -->
         </div> <!--grid close-->
     </div> <!--wrapper close-->
     <footer class="footer">version .032
         <a href="changelog.html">(Changelog)</a>
-        <a class="mmlink" href="mistermustard.html">mister mustard</a>
+        <a class="mmlink" href="mistermustard.html" target="_blank" alt="mister mustard">mister mustard</a>
         <ul class="save-menu">
             <li><a href="#!" class="reset" id="reset">reset</a></li>
             <li><a href="#!" class="load" id="load">load</a></li>
@@ -204,15 +214,13 @@
 
         <div class="stories-grey" id="story-container">
             <div class="stories-wrapper">
-                <img class="pig" src="img/pig_02.png" alt="pig guide">
+                <img class="pig" width="500" height="300" src="img/pig.webp" alt="cartoon of a pig chef sharpening a knife">
                 <div class="stories-yellow">
                     <div id="story-box" class="story-box">                 
                     </div>
-                    <a href="#!" id="exit">Let's Go!</a>
+                    <a href="#" id="exit">Let's Go!</a>
                 </div>
             </div>
         </div>
-
-    <script src="js/hotdogger.js"></script>
 </body>
 </html>

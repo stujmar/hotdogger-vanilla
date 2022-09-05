@@ -46,7 +46,7 @@
 }
 
 #exit {
-  background: tomato;
+  background: rgb(236, 83, 56);
   border-radius: 5px;
   margin: 15px auto 0;
   color: white;
@@ -55,7 +55,7 @@
   height: 35px;
   padding-top: 5px;
   text-align: center;
-  text-shadow: 0 0 5px rgb(83, 16, 4);
+  text-shadow: 0 1px 3px rgb(58, 11, 2);
   width: 100px;
 }
 
@@ -65,9 +65,11 @@
   }
 
 .pig {
+    aspect-ratio: attr(width) / attr(height);
     margin-left: 100px;
-    width: 300px;
-    max-width: 500px;
+    max-width: 250px;
+    max-height: 150px;
+
 }
 
 /*---Tailwind Media Queries --*/
@@ -90,10 +92,9 @@
   .story-relative {
   }
   .pig {
-    top: -200px;
-    width: 400px;
-    margin-right:-150px;
-    right: 45%;
+    margin-right:-50px;
+    max-width: 500px;
+    max-height: 300px;
   }
 }
 

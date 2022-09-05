@@ -142,7 +142,7 @@ const main = () => {
     const milestone = [0,5,50,100,250,500,1000,2000,3000,4000,5000]; // Total dogs required to trigger Story
     const stories = [
         '<p>Welcome to Hot Dogger! </br> The game where you click a giant hot dog. </br> Give it a try, click that dog! Get 5 hot dogs and I bet you can afford some delicious ketchup.</ p>',
-        `Congratulations you have ${milestone[1]} dogs! You unlocked ketchup! Ketchup increases your clicking power! Load up on ketechup!`,
+        `Congratulations you have ${milestone[1]} dogs! You unlocked ketchup! Ketchup increases your clicking power! Load up on ketchup!`,
         `Congratulations you have ${milestone[2]} dogs`,
         `Congratulations you have ${milestone[3]} dogs!`,
         `Congratulations you have ${milestone[4]} dogs!`,
@@ -189,17 +189,17 @@ const main = () => {
         // document.cookie = document.getElementById('total').innerHTML; //store dogs in cookies
     },100); //We are refreshing 10 times a second 
 
-    document.getElementById("the-hotdog").addEventListener('click',(e) => {
-        let checkedMoney = parseFloat(document.getElementById('total').innerHTML); //look into this.
-        if (checkedMoney > 0){
-        e.preventDefault();
-        } else {
-            navigator.vibrate(250);
-        }
+    document.getElementById("dog-button").addEventListener('click', (e) => {
+        // let checkedMoney = parseFloat(document.getElementById('total').innerHTML); //look into this.
+        // if (checkedMoney > 0){
+        // e.preventDefault();
+        // } else {
+        //     navigator.vibrate(250);
+        // }
         addDogScore(displayScores);
-        addClicksScore(displayScores);   
+        addClicksScore(displayScores);
     });
-    
+
     document.getElementById("reset").addEventListener('click',(e) => { //Resets all quantities owned in the allFood.
         displayScores.total = 0; 
         displayScores.clicked = 0;
@@ -212,15 +212,15 @@ const main = () => {
         });
     });
     
-    
-    document.getElementById("eat").addEventListener('click',(e) => {
-        e.preventDefault();
-        let addScore = parseInt(document.getElementById('eaten').innerHTML);
-        addScore += 1;
-        document.getElementById('eaten').innerHTML = addScore;
-        displayScores.total -= 1; //Is this ok?
-        addClicksScore(displayScores); 
-    });
+    /* If I every put eating hotdogs back into the game. */
+    // document.getElementById("eat").addEventListener('click',(e) => {
+    //     e.preventDefault();
+    //     let addScore = parseInt(document.getElementById('eaten').innerHTML);
+    //     addScore += 1;
+    //     document.getElementById('eaten').innerHTML = addScore;
+    //     displayScores.total -= 1; //Is this ok?
+    //     addClicksScore(displayScores); 
+    // });
     
     document.getElementById("save").addEventListener('click',(e) => { //Resets all quantities owned in the allFood.
         console.log('saving');
