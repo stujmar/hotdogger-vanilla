@@ -214,7 +214,8 @@ body {
     color: rgb(116, 0, 0);
     padding: 10px;
     background: rgb(255, 220, 21);
-    display: block;
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -228,23 +229,33 @@ a:visited {
     color:black;
 }
 
+.footer-left {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
 .save-menu, .save-menu li {
+    padding: 0;
     display: inline;
-    float: right;
-    margin-top: 0;
-    padding-right: 10px;
+    margin: 0;
+}
+
+.save-menu li {
+    margin-right: 5px;
 }
 
 .mmlink, .mmlink:visited {
-    background: rgb(252, 187, 10);
-    margin-left: 10px;
     font-weight: 500;
-    padding: 3px 8px 4px;
+    background:rgb(255, 220, 21);
+    width: 20px;
+    display: inline-block;
+    height: 20px;
     color: rgb(46, 1, 1);
     border-radius: 10px;
 }
-    .mmlink:hover {
-        background:rgb(231, 164, 19)
+.mmlink:hover {
+        background: rgb(252, 187, 10);
     }
   .reset {
     float: right;
