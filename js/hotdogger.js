@@ -121,14 +121,14 @@ const checkCostStyle = (idPrefix) => {
 const main = () => {
     let allFood = [ //I am beginning to make all upgrade related data live here.
         {name: 'ketchup' , reqDogs: 5,    isSauce: true,  multiplier: 0.01, cost:    1, costInc: 1.05, owned: 0}, 
-        {name: 'mustard' , reqDogs: 15,   isSauce: true,  multiplier: 0.02, cost:    2, costInc: 1.10, owned: 0},  
-        {name: 'relish'  , reqDogs: 25,   isSauce: true,  multiplier: 0.05, cost:    3, costInc: 1.25, owned: 0},  
-        {name: 'bbq'     , reqDogs: 35,   isSauce: true,  multiplier: 0.10, cost:    4, costInc: 1.50, owned: 0}, 
+        {name: 'mustard' , reqDogs: 50,   isSauce: true,  multiplier: 0.02, cost:    3, costInc: 1.10, owned: 0},  
+        {name: 'relish'  , reqDogs: 100,   isSauce: true,  multiplier: 0.05, cost:    5, costInc: 1.25, owned: 0},  
+        {name: 'bbq'     , reqDogs: 200,   isSauce: true,  multiplier: 0.10, cost:    10, costInc: 1.50, owned: 0}, 
         {name: 'cheese'  , reqDogs: 1000, isSauce: true,  multiplier: 1.00, cost: 1000, costInc: 3.00, owned: 0}, 
         {name: 'onions'  , reqDogs: 10,   isSauce: false, multiplier: 1.00, cost:   10, costInc: 1.05, owned: 0},  
-        {name: 'pickles' , reqDogs: 20,   isSauce: false, multiplier: 2.00, cost:   20, costInc: 1.10, owned: 0},  
-        {name: 'tomatoes', reqDogs: 50,   isSauce: false, multiplier: 3.00, cost:   50, costInc: 1.25, owned: 0},  
-        {name: 'peppers' , reqDogs: 100,  isSauce: false, multiplier: 4.00, cost:  100, costInc: 1.50, owned: 0}
+        {name: 'pickles' , reqDogs: 75,   isSauce: false, multiplier: 2.00, cost:   75, costInc: 1.10, owned: 0},  
+        {name: 'tomatoes', reqDogs: 150,   isSauce: false, multiplier: 3.00, cost:   150, costInc: 1.25, owned: 0},  
+        {name: 'peppers' , reqDogs: 250,  isSauce: false, multiplier: 4.00, cost:  250, costInc: 1.50, owned: 0}
     ];
 
     let displayScores = { //Store all scores
@@ -139,11 +139,11 @@ const main = () => {
     };
 
     let currentStoryIndex = 0; // Current Index of pop up story
-    const milestone = [0,5,50,100,250,500,1000,2000,3000,4000,5000]; // Total dogs required to trigger Story
+    const milestone = [0,5,10,100,250,500,2000,5000,10000,20000,50000]; // Total dogs required to trigger Story
     const stories = [
         '<p>Welcome to Hot Dogger! </br> The game where you click a giant hot dog. </br> Give it a try, click that dog! Get 5 hot dogs and I bet you can afford some delicious ketchup.</ p>',
         `Congratulations you have ${milestone[1]} dogs! You unlocked ketchup! Ketchup increases your clicking power! Load up on ketchup!`,
-        `Congratulations you have ${milestone[2]} dogs`,
+        `Congratulations you have ${milestone[2]} dogs! Buy some onions! Onions increase your hot dogs per second!`,
         `Congratulations you have ${milestone[3]} dogs!`,
         `Congratulations you have ${milestone[4]} dogs!`,
         `Congratulations you have ${milestone[5]} dogs!`,

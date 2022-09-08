@@ -225,9 +225,6 @@ body {
     margin-bottom: 0px;
     z-index: 5;
 }
-a:visited {
-    color:black;
-}
 
 .footer-left {
     display: flex;

@@ -12,6 +12,15 @@ a {
   text-decoration: none;
 }
 
+a:visited, a:link {
+  color: #740000;
+}
+
+a.click {
+  cursor: pointer;
+  color: black
+}
+
 button {
   border: none;
   cursor: pointer;
